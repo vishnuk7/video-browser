@@ -18,7 +18,7 @@ export default {
 <style scoped>
 #search {
   width: 100%;
-  margin-top: 2rem;
+  margin: 2rem 0;
   border-radius: 20px;
 }
 </style>
