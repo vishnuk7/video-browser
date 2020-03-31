@@ -1,7 +1,9 @@
 <template>
-  <li>
-    <img :src="thumbnails" />
-    {{ video.snippet.title }}
+  <li class="list-group-item media d-flex">
+    <img class="mr-3" :src="thumbnails" />
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">{{ video.snippet.title }}</h5>
+    </div>
   </li>
 </template>
 
@@ -16,3 +18,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+li {
+  transition: all 0.2s;
+}
+li:hover {
+  background-color: #eee;
+}
+</style>

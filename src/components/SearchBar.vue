@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" @input="onInput" />
+    <input class="form-control" id="search" type="text" @input="onInput" />
   </div>
 </template>
 
@@ -15,4 +15,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+#search {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+</style>
